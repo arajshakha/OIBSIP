@@ -1,0 +1,166 @@
+body {
+    width: 80%;
+    margin: 0 auto;
+    background-color: black;
+}
+
+
+.header {
+    height: 5rem;
+    display: flex;
+    justify-content: space-between;
+    font: bold;
+}
+
+.header a {
+    gap: 10ph;
+    margin: 37px 30px 30px 15px;
+    font-size: 20px;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font: bold;
+}
+
+.header h3 {
+    font-size: 32px;
+    margin-top: 40px;
+    color: rgb(255, 255, 255);
+    font: bold;
+
+}
+
+.tab-tittles {
+    display: flex;
+    margin-top: 1rem;
+}
+
+.tab-links {
+    margin-left: 20px;
+    font-size: 18px;
+    font-weight: 400;
+    cursor: pointer;
+    position: relative;
+    color: white;
+
+}
+
+.tab-links::after {
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #ff004f;
+    left: 0;
+    position: absolute;
+    bottom: -8px;
+    transition: 0.5s;
+}
+
+.tab-links.active-link::after {
+    width: 50%;
+}
+
+span {
+    display: flex;
+}
+
+.tab-contents ul li {
+    list-style: none;
+    color: white;
+
+}
+
+.tab-contents ul li span {
+    font-size: 20px;
+    font-weight: 100;
+    color: white;
+    display: flex;
+}
+
+.tab-contents {
+    display: none;
+}
+
+.tab-contents.active-tab {
+    display: flex;
+
+}
+
+.fa {
+    padding: 1px;
+    font-size: 90px;
+    width: 25px;
+    text-decoration: none;
+    border-radius: 30px;
+    transition: transform 0.5s;
+    color: #ff004f;
+}
+
+.fa:hover {
+    background-color: white;
+    color: black;
+    transform: translateY(-5px);
+}
+
+.contact-left {
+    flex-basis: 10%;
+}
+
+.contact-right {
+    flex-basis: 60%;
+    height: 20rem;
+    display: flex;
+    margin-bottom: 60px;
+}
+
+.contact-left p {
+    display: flex;
+
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 40px;
+    text-decoration: none;
+    color: #ff004f;
+    font-size: 20px;
+}
+
+.btn:hover {
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+
+.contact-right form {
+    width: 100%;
+    color: #ff004f;
+}
+
+form input,
+form textarea {
+    width: 100%;
+    border: 0;
+    outline: none;
+    background: #fff;
+    padding: 15px;
+    margin-top: 10px;
+    color:black;
+    font-size: 18px;
+    border-radius: 6px;
+}
+form button{
+    background-color: whitesmoke;
+    color: black;
+    height: 3rem;
+    width: 5rem;
+    border-radius: 5px;
+    font-size: 16px;
+    padding: 3px;
+    cursor: pointer;
+    margin-top: 0.7rem;
+    font-weight: 400;
+}
+form button:hover{
+    background-color: white;
+    color: #ff004f;
+}

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <title>My Portfolio</title>
+</head>
+
+<body>
+    <div id="header">
+        <div class="header">
+            <h3>Portfolio</h3>
+            <div style="display: flex;">
+                <a href="#">Home</a>
+                <a href="#">About Me</a>
+                <a href="#"> Contact</a>
+            </div>
+        </div>
+        <div>
+            <div style="float: left;width: 50%; height: 27rem; ">
+
+                <h3 style="margin: 4rem 0px 20px 0px; font-size: 2rem; color:yellow;">Web Developer</h3>
+                <h2 style="font-size:25px; color: white">Hello I Am </h2>
+                <h2 style="font-size: 3rem;  color:yellow; margin-top: 20px;">Ankita</h2>
+                <p style="color: white; font-size: 25px; justify-content: right;">Currently i am pursuing my bachelor
+                    degree in
+                    computer enigeering at ldrp institute , Gandhinagar. As a fresher i am looking forward for
+                    a better organization to start my career with my skills and knowledge.</p>
+                </p>
+            </div>
+            <div style="float: left;width: 50%; height: 27rem; margin-top: 20px;">
+                <img src="./images/Home.jpg" alt="">
+            </div>
+        </div>
+    </div>
+
+
+    <div class="pic">
+        <div style="float: left;width: 35%; height: 35rem; margin-top: 80px;">
+            <img style="height: 31rem; width: 20rem;" src="./images/meee.png" alt="">
+        </div>
+
+    </div>
+
+
+    <div class="about">
+        <div class="head" style="float: right;width: 63%; height: 35rem; margin-top: 80px;">
+            <p style="margin-top: 5px;font-size: 40px;color: white; font-family: 400;">About Me</p>
+            <p style="font-size: 20px; margin-top: 0px; color: white;">Currently i am pursuing my bachelor degree in
+                computer
+                enigeering at ldrp institute , Gandhinagar. As a fresher i am looking forward for a better organization
+                to start my career with my skills and knowledge.</p>
+
+
+            <div class="tab-tittles">
+                <p class="tab-links active-link" onclick="opentab('Skills')">Skills</p>
+                <p class="tab-links" onclick="opentab('Education')">Education</p>
+            </div>
+            <div class="tab-contents active-tab" id="Skills">
+                <ul>
+                    <li><span>HTML</span><br></li>
+                    <li><span>CSS</span><br></li>
+                    <li><span>JavaScript</span><br></li>
+                    <li><span>Python</span><br></li>
+                    <li><span>MySql</span><br></li>
+                </ul>
+            </div>
+
+            <div class="tab-contents" id="Education">
+                <ul>
+                    <li><span>BE(Computer Enginnering)</span><br>LDRP institute-(2019-2023)</li><br>
+                    <li><span>12TH(Science)</span><br>Royal Group Of Schools-2019</li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+
+    <div>
+
+        <div style="color: white; width: 60%; float: left;">
+            <p style="color: white; font-size: 45px;">Contact Me</p>
+            <p style="color: white; font-size: 20px;">ankitakaravadra42@gmail.com</p>
+            <p style="color: white; font-size: 20px;">0123456789</p>
+            <a href="#" class="fa fa-facebook"></a>
+            <a href="#" class="fa fa-twitter"></a>
+            <a href="#" class="fa fa-google"></a>
+            <a href="#" class="fa fa-instagram"></a><br><br>
+            <a href="./images/Ankita_ldrp.pdf" download class="btn" style="margin-top: 40px;">Download CV</a>
+        </div>
+
+        <div class="contact-right"
+            style="color: white; width:40%; float: right">
+            <form style="margin-top: 30px;">
+                <input type="text" name="Name" placeholder="Your Name" required>
+                <input type="text" name="email" placeholder="Your Email" required>
+                <textarea name="Message" rows="5" placeholder="Your message"></textarea>
+                <button type="submit">submit</button>
+            </form>
+        </div>
+
+
+    </div>
+
+    <script>
+
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab")
+        }
+
+    </script>
+</body>
+
+</html>
